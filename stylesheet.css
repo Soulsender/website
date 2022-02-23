@@ -1,4 +1,11 @@
-#site-title {
-    color: green;
+.body {
     font-family: monospace;
+}
+
+.site-title {
+    color: green;
+}
+
+.menu-bar {
+    color: green;
 }

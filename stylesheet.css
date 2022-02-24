@@ -1,11 +1,86 @@
 .body {
+    font-family: monospace !important;
+}
+body {
+    background-color: #fff;
+    color: #777;
+    font-size: px;
+}
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1 {
     font-family: monospace;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
-
-.site-title {
-    color: green;
+h2 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-.menu-bar {
-    color: green;
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
 }
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    padding: 8px;
+    background-color: #f89130;
+}
+li {
+    float: left;
+    list-style-type: none;
+}
+a:hover {
+    color: #a55000;
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+.parallax {
+    background-image: url("./images/hero-image.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

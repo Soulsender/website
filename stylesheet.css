@@ -1,6 +1,4 @@
-.body {
-    font-family: monospace !important;
-}
+
 body {
     background-color: #fff;
     color: #777;
@@ -52,14 +50,14 @@ a {
     display: block;
     padding: 8px;
     background-color: #f89130;
+    
 }
-li {
+ul li {
     float: left;
     list-style-type: none;
+    margin: 10px;
 }
-a:hover {
-    color: #a55000;
-}
+
 strong {
     font-weight: bold;
 }
@@ -72,15 +70,19 @@ small {
     clear: both;
 }
 .wrapper {
+    width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
-    width: 940px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: monospace
 }
 .parallax {
-    background-image: url("./images/hero-image.jpeg");
+    /* parallax scrolling feature */
+    background-image: url("./images/hero-image2.jpeg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}

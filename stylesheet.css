@@ -57,7 +57,13 @@ ul li {
     float: left;
     list-style-type: none;
 }
-ul li:hover {
+ul li:hover{
+    color: black;
+    background-color: rgb(248, 234, 209);
+    transition: background-color 1s linear;
+    border-radius: 6px;
+}
+.feature-1:hover, .feature-2:hover, .feature-3:hover {
     color: black;
     background-color: rgb(248, 234, 209);
     transition: background-color 1s linear;

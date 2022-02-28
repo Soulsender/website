@@ -4,7 +4,7 @@ body {
     color: #777;
     font-size: px;
 }
-p {
+p:not(.default) {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -44,24 +44,28 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
 }
-a {
+/* This ruleset removes the default blue hyperlink text that would otherwise occur in the 3 features.*/
+.default {
+    color: inherit;
+}
+/* This ruleset tells the .default class to not follow the ruleset of <a>*/
+a:not(.default) {
     text-decoration: none;
     color: #444;
     display: block;
     padding: 8px;
     background-color: #f89130;
     display: block;
-    
+}
+a:hover{
+    color: black;
+    background-color: #d68437;
 }
 ul li {
     float: left;
     list-style-type: none;
 }
-a:hover{
-    color: black;
-    background-color: #d68437;
-    transition: background-color 1s linear;
-}
+/* This hovering where the 3 features pop out in a different colour originally started as a bug, then I thought it looked cool, so I fine-tuned it. This was done completely by me.*/
 .feature-1:hover, .feature-2:hover, .feature-3:hover {
     color: black;
     background-color: rgb(248, 234, 209);
@@ -89,7 +93,7 @@ small {
     font-family: monospace
 }
 .parallax-1 {
-    /* parallax scrolling feature */
+    /* parallax scrolling feature 1 */
     background-image: url("./images/parallax-1.jpeg");
     min-height: 500px;
     background-attachment: fixed;
@@ -98,7 +102,7 @@ small {
     background-size: cover;
 }
 .parallax-2 {
-    /* parallax scrolling feature */
+    /* parallax scrolling feature 2 */
     background-image: url("./images/parallax-2.jpeg");
     min-height: 500px;
     background-attachment: fixed;
@@ -149,5 +153,4 @@ small {
 #footer-links ul li {
     margin: 2px 0;
 }
-
 

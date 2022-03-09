@@ -111,6 +111,15 @@ small {
     background-size: cover;
     margin-top: 470px;
 }
+.parallax-3 {
+    /* This won't load on firefox, I have no idea why.*/
+    background-image: url("./images/support.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #cta {
     padding: 60px 0;
     text-align: center;

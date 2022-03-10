@@ -55,6 +55,7 @@ img {
 /* Below are specific things. Above are basic things that should not be changed. */
 /* ================================================================== */
 
+
 .image {
     display: flex;
     align-items: center;

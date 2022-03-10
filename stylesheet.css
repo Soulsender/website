@@ -44,6 +44,10 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
 }
+img {
+    width: 40%;
+    height: 40%;
+}
 /* This ruleset removes the default blue hyperlink text that would otherwise occur in the 3 features.*/
 .default {
     color: inherit;

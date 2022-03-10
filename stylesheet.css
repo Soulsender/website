@@ -45,8 +45,23 @@ h5 {
     text-transform: uppercase;
 }
 img {
-    width: 40%;
-    height: 40%;
+    width: 40% !important;
+    height: 40% !important;
+    
+}
+
+
+/* ================================================================== */
+/* Below are specific things. Above are basic things that should not be changed. */
+/* ================================================================== */
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.image-text {
+    margin-left: 100px;
 }
 /* This ruleset removes the default blue hyperlink text that would otherwise occur in the 3 features.*/
 .default {

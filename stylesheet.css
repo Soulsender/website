@@ -44,10 +44,14 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
 }
-img {
-    width: 40%;
-    height: 40%;
-}
+
+
+/* ================================================================== */
+/* Below are specific things. Above are basic things that should not be changed. */
+/* ================================================================== */
+
+
+
 /* This ruleset removes the default blue hyperlink text that would otherwise occur in the 3 features.*/
 .default {
     color: inherit;
@@ -68,16 +72,6 @@ a:hover{
 ul li {
     float: left;
     list-style-type: none;
-}
-img {
-    margin-top: 40px;
-    transition: background-color 1s linear;
-}
-img:hover {
-    padding: 8px;
-    background-color: #f89130;
-    display: block;
-
 }
 /* This hovering where the 3 features pop out in a different colour originally started as a bug, then I thought it looked cool, so I fine-tuned it. This was done completely by me.*/
 .feature-1:hover, .feature-2:hover, .feature-3:hover {

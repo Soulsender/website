@@ -88,13 +88,10 @@ a:hover{
     color: black;
     background-color: #d68437;
 }
+/* This removes the dots at the beginning of a list */
 ul li {
     float: left;
     list-style-type: none;
-}
-
-.form-inputs {
-    margin: 20px;
 }
 /* This hovering where the 3 features pop out in a different colour originally started as a bug, then I thought it looked cool, so I fine-tuned it. This was done completely by me.*/
 .feature-1:hover, .feature-2:hover, .feature-3:hover {

@@ -49,12 +49,15 @@ img {
     height: 40% !important;
     
 }
+iframe {
+    position: absolute;
+}
 
 /* ================================================================== */
 /* Below are specific things. Above are basic things that should not be changed. */
 /* ================================================================== */
 
-.img:hover {
+img:hover {
     text-decoration: none;
     color: #444;
     display: block;

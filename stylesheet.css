@@ -1,4 +1,4 @@
-
+/* Web development is not my thing */
 body {
     background-color: #fff;
     color: #777;
@@ -55,7 +55,14 @@ img {
 /* Below are specific things. Above are basic things that should not be changed. */
 /* ================================================================== */
 
-
+.img:hover {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    padding: 8px;
+    background-color: #f89130;
+    display: block;
+}
 .image {
     display: flex;
     align-items: center;
@@ -86,6 +93,9 @@ ul li {
     list-style-type: none;
 }
 
+.form-inputs {
+    margin: 20px;
+}
 /* This hovering where the 3 features pop out in a different colour originally started as a bug, then I thought it looked cool, so I fine-tuned it. This was done completely by me.*/
 .feature-1:hover, .feature-2:hover, .feature-3:hover {
     color: black;
@@ -144,6 +154,15 @@ small {
 .parallax-gallery {
     /* This won't load on firefox, I have no idea why.*/
     background-image: url("./images/gallery.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-about {
+    /* This won't load on firefox, I have no idea why.*/
+    background-image: url("./images/about.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;

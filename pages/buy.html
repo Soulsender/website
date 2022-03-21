@@ -12,7 +12,7 @@
         <header>
             <!-- header -->
             <div class="wrapper">
-                <h1>Your Cart</h1>
+                <h1>Payment</h1>
             </div>
         </header>
 
@@ -25,26 +25,36 @@
                             list-style-type: none;
                             font-size: 20px;
                         }
-                        input {
+                        input, select {
                             margin-bottom: 20px;
                         }
+                        
                         form {
                             margin-bottom: 200px;
                             margin-top: 50px;
                         }
                     </style>
-                    <li><label> First Name:</label></li>
-                    <li><input type="text" ></li>
-                    <li><label> Last Name:</label></li>
-                    <li><input type="text" ></li>
+                    <li><label>Product Selected</label></li>
+                    <li><select required="required">
+                            <option>Select a Product</option>
+                            <option>RTX 4050</option>
+                            <option>RTX 3020</option>
+                            <option>GTX 2040</option>
+                            <option>Not this one...</option>
+                        </select>
+                    </li>
+                    <li><label>First Name:</label></li>
+                    <li><input type="text" required="required" ></li>
+                    <li><label>Last Name:</label></li>
+                    <li><input type="text" required="required"></li>
                     <li><label>Country:</label></li>
-                    <li><input type="text"></li>
+                    <li><input type="text" required="required"></li>
                     <li><label>City:</label></li>
-                    <li><input type="text"></li>
+                    <li><input type="text" required="required"></li>
                     <li><label>Address:</label></li>
-                    <li><input type="text" minlength="6"></li>
+                    <li><input type="text" minlength="6" required="required"></li>
                     <li><label>Postal Code:</label></li>
-                    <li><input type="text" maxlength="6"></li>
+                    <li><input type="text" maxlength="6" required="required"></li>
                     <li><input type="submit"></li>
                 </form>
             </div>

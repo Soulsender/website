@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Bob's Graphic Cards</title>
 <link rel="stylesheet"  type="text/css" href="stylesheet.css">
-   <script type="text/javascript" src="myscripts.js"></script>
+   <script src="myscripts.js"></script>
 </head>
 
 <!-- 
@@ -41,12 +41,52 @@
                 </nav>
             </div>
         </header>
+
+        
+
         <!-- parallax scrolling 1 -->
         <div class="parallax-1">
+            
             <div class="title">
                 <!-- title -->
                 <div class="wrapper">
-                    <h2 style="color: white"><strong><br/>Locally and Ethically Made</strong></h2>
+                    <style>
+                        /* CSS code for the type-deleting effect */
+                        #container {
+                            text-align: center;
+                        }
+        
+                        #text {
+                            margin-top: 50px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            color: white;
+                            letter-spacing: 2px;
+                        }
+        
+                        #cursor {
+                            margin-top: 50px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 3px;
+                            height: 50px;
+                            background-color: orange;
+                            animation: blink .75s step-end infinite;
+                        }
+        
+                        @keyframes blink {
+                            from, to { 
+                                background-color: transparent 
+                            }
+                            50% { 
+                                background-color: orange; 
+                            }
+                        }
+                    </style>
+                    <div id="container">
+                        <!-- This is the code for the deleting and typing effect. It does not work as intended. I'm pretty sure the issue is a CSS conflict somewhere, but I don't think it's something I can change without breaking the entire website. If you want to see a working version you can head over to my personal website at soulsender.github.io -->
+                        <strong><h2><div id="text"></div><div id="cursor"></div></h2></strong>
+                    </div>
                 </div>  
             </div>
         </div>
@@ -91,7 +131,7 @@
             <!-- take action prompt -->
             <div class="wrapper">
                 <h3>Heard Enough?</h3>
-                <a href="./pages/products.html" class="button-2" onMouseOver="alert('Please Refer to our COVID-19 Protection Plan for infomation about your purchase.'); true;">Get Started!</a>
+                <a href="./pages/products.html" class="button-2">Get Started!</a>
   
             </div>
         </div>
@@ -114,5 +154,9 @@
                 <div class="clear"></div>
             </div>
         </footer>
+
+        <script src="myscripts.js"></script>
+
     </body>
+    
 </html>
